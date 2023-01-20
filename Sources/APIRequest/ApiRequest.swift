@@ -1,6 +1,7 @@
-public struct APIRequest {
-    public private(set) var text = "Hello, World!"
 
+public struct APIRequest {
+
+    
     public init() {
     }
 }
