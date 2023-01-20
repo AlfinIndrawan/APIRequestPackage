@@ -25,7 +25,7 @@ extension URLRequest {
 }
 
 extension URL {
-  static public func urlForMeals(name: String) -> URL? {
+  static public func urlForMeals() -> URL? {
     return URL(string: "https://www.themealdb.com/api/json/v1/1/filter.php?c=Seafood")
   }
   static public func urlForMealsDetail(id: String) -> URL? {
