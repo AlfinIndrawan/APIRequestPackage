@@ -4,6 +4,9 @@ import RxSwift
 
 public struct Resource<T> {
   let url: URL
+  public init(_ url: URL){
+    self.url = url
+  }
 }
 
 extension URLRequest {
