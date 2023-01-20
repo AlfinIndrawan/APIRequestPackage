@@ -2,7 +2,7 @@ import Foundation
 import RxCocoa
 import RxSwift
 
-public struct Resource<T> {
+public struct FetchSource<T> {
   let url: URL
   public init(_ url: URL){
     self.url = url
@@ -10,7 +10,7 @@ public struct Resource<T> {
 }
 
 extension URLRequest {
-  static public func load<T: Decodable>(resource: Resource<T>) -> Observable<T> {
+  static public func load<T: Decodable>(resource: FetchSource<T>) -> Observable<T> {
     return Observable.just(resource.url)
       .flatMap { url -> Observable<(response: HTTPURLResponse, data: Data)> in
         let request = URLRequest(url: url)
