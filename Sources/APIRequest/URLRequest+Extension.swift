@@ -35,6 +35,6 @@ extension URL {
     return URL(string: "https://www.themealdb.com/api/json/v1/1/lookup.php?i=\(id)")
   }
   static public func urlForSearch(name: String) -> URL? {
-    return URL(string: "www.themealdb.com/api/json/v1/1/search.php?s=\(name)")
+    return URL(string: "https://www.themealdb.com/api/json/v1/1/search.php?s=\(name)")
   }
 }
